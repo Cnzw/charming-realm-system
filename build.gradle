@@ -6,7 +6,7 @@ plugins {
 }
 
 
-//// ¶ÁÈ¡ plugin.yml ÎÄ¼şÖĞµÄ name ºÍ version
+//// è¯»å– plugin.yml æ–‡ä»¶ä¸­çš„ name å’Œ version
 //def pluginYml = new File('src/main/resources/plugin.yml')
 //def pluginName = ''
 //def pluginVersion = ''
@@ -32,7 +32,7 @@ shadowJar {
     archiveVersion.set(pluginVersion)
     archiveExtension.set('jar')
     relocate 'org.reflections', 'com.caizii.charmrealm.lib.reflections'
-    relocate 'javassist', 'com.caizii.charmrealm.lib.javassist'  // È·±£°üÃû²»³åÍ»
+    relocate 'javassist', 'com.caizii.charmrealm.lib.javassist'  // ç¡®ä¿åŒ…åä¸å†²çª
     dependencies {
         include(dependency('org.reflections:reflections'))
         include(dependency('org.javassist:javassist'))
